@@ -30,31 +30,31 @@ function App() {
 
 
   return (
-  <div className='bg-gray-900 w-screen h-screen flex justify-center items-center px-80'>
-      <div className='w-full  text-center shadow-md rounded-lg px-4 py-4 text-white bg-gray-700'>
+  <div className='bg-gray-900 w-screen h-screen flex justify-center items-center'>
+      <div className='w-[40vw] h-[60vh] text-center shadow-md rounded-lg px-4 py-4 text-white bg-gray-700 flex flex-col gap-10 max-sm:w-[100vw] font-black'>
         Password Generator
-        <div className='flex overflow-hidden gap-3 text-black'>
+        <div className='flex overflow-hidden  text-black mt-5'>
           <input 
             type='text'
             value={password}
-            className='outline-none w-full py-1 px-3 rounded-xl mt-4'
+            className='outline-none w-full py-1 px-3 rounded-xl mt-4 font-normal'
             placeholder='Password'
             readOnly
           />
         </div>
-        <div className='flex text-sm justify-evenly mt-5'>
-          <div className='flex items-center gap-x-1'>
+        <div className='flex flex-col items-center justify-center gap-7 text-sm mt-10'>
+          <div className='flex flex-col justify-centeritems-center gap-x-1 font-normal'>
             <input
               type='range'
               min={6}
               max={100}
               value={length}
-              className='cursor-pointer'
+              className='cursor-pointer '
               onChange={ (e)=> {setLength(e.target.value)}}
             />
             <label>length:{length}</label>
           </div>
-          <div className='flex items-center gap-x-1'>
+          <div className='flex items-center gap-x-1 font-normal'>
             <input
               type='checkbox'
               defaultChecked={numAllowed}
@@ -65,7 +65,7 @@ function App() {
             />
             <label>Number</label>
           </div>
-          <div className="flex items-center gap-x-1">
+          <div className="flex items-center gap-x-1 font-normal">
           <input
               type="checkbox"
               defaultChecked={charAllowed}
