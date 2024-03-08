@@ -41,9 +41,6 @@ function App() {
             placeholder='Password'
             readOnly
           />
-          <button 
-            className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0 rounded-lg mt-4'
-          >Copy</button>
         </div>
         <div className='flex text-sm justify-evenly mt-5'>
           <div className='flex items-center gap-x-1'>
