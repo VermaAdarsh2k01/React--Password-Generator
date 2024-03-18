@@ -26,7 +26,7 @@ function App() {
 
   useEffect( ()=>{ 
   passwordGenerator()
-},[length ,numAllowed ,charAllowed , ])
+},[length ,numAllowed ,charAllowed ])
 
 
   return (
